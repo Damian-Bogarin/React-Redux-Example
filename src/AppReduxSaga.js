@@ -3,22 +3,17 @@ import './App.css';
 import  TodoContainers  from './components/containers/TodoContainers';
 import TodoFormContainer from './components/containers/TodoFormContainer';
 import FilterOptions from './components/pure/FilterOptions';
+import LoginFormContainer from './components/containers/LoginFormContainer';
 
 
 
 
-function App() {
+function AppReduxSaga() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-       <TodoContainers></TodoContainers>
-       <TodoFormContainer></TodoFormContainer>
-       {/* Filter Options contain Filter Container */}
-       <FilterOptions></FilterOptions>
-      </header>
+      <LoginFormContainer></LoginFormContainer>
     </div>
   );
 }
 
-export default App;
+export default AppReduxSaga;
